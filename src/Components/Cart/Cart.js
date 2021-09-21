@@ -18,7 +18,6 @@ const Cart = (props) => {
   };
 
   const orderHandler = () => {
-    console.log("ordered");
     setordershow(true);
   };
 

@@ -15,7 +15,6 @@ const AvailableMeal = () => {
       "https://meals-55c67-default-rtdb.firebaseio.com/Meals.json"
     );
 
-    console.log(response);
     if (response.ok) {
       throw new Error("SomeThing went wrong!");
     }
@@ -42,8 +41,6 @@ const AvailableMeal = () => {
       setError(error.message);
     });
   }, []);
-
-  console.log(data);
 
   if (isLoading) {
     return (

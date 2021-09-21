@@ -24,7 +24,6 @@ const Checkout = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    console.log("submit");
 
     const nameValue = nameInputRef.current.value;
     const streetValue = streetInputRef.current.value;

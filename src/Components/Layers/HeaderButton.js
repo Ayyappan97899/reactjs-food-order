@@ -12,7 +12,6 @@ const HeaderButton = (props) => {
     return currentval + item.amount;
   }, 0);
 
-  console.log(Totamount);
   const addCartHandler = () => {
     props.setmodal(true);
   };

@@ -14,11 +14,7 @@ const cartReducer = (state, action) => {
       return ele.id === action.items.id;
     });
 
-    console.log("index" + existingItemindex);
-
     const existingItem = state.items[existingItemindex];
-
-    console.log("existing" + existingItem);
 
     let updateItems;
     if (existingItem) {
@@ -29,7 +25,6 @@ const cartReducer = (state, action) => {
       updateItems = [...state.items];
 
       updateItems[existingItemindex] = updateItem;
-      console.log("update" + updateItems);
     } else {
       updateItems = state.items.concat(action.items);
     }

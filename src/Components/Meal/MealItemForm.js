@@ -8,8 +8,7 @@ const MealItemForm = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
     const enteredamount = +inputRef.current.value;
-    const type = typeof enteredamount;
-    console.log(type);
+
     props.amount(enteredamount);
   };
 
